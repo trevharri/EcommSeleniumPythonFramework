@@ -26,5 +26,14 @@ class MyAccountSignedOut(MyAccountSignedOutLocators):
     def get_err_text(self):
         return self.sl.wait_and_get_text(self.ALERT_LI)
 
+    def input_reg_email(self, username):
+        self.sl.wait_and_input_text(self.REG_EMAIL, username)
+
+    def input_reg_password(self, password):
+        self.sl.wait_and_input_text(self.REG_PASSWORD, password)
+
+    def click_reg_button(self):
+        self.sl.wait_and_click(self.REG_BTN)
+
 
 
