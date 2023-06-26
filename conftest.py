@@ -35,7 +35,7 @@ def init_driver(request):
         firefox_options.add_argument('--no-sandbox')
         firefox_options.add_argument('--headless')
         driver = webdriver.Firefox(options=firefox_options)
-
+    driver.maximize_window()
     request.cls.driver = driver
     yield
     driver.quit()
