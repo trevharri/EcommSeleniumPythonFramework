@@ -15,6 +15,10 @@ class HomePage(HomePageLocators):
         self.driver.get(HomePage.home_url)
 
     def add_random_product_to_cart(self):
-        products = self.sl.wait_and_get_elements(self.PRODUCT_BTNS)
+        # products = self.sl.wait_and_get_elements(self.PRODUCT_BTNS)
+        # product = random.choice(products)
+        # product.click()
+        products = self.sl.wait_and_get_elements(self.PRODUCT_CARDS)
         product = random.choice(products)
-        product.click()
+        product.find_element(*self.PRODUCT_BTN).click()
+        return product.find_element(*self.PRODUCT_TITLE).text

@@ -11,6 +11,8 @@ class OrderReceivedPage(OrderReceivedPageLocators):
     def confirm_page_loaded(self):
         self.sl.wait_until_url_contains('order-received')
 
-
     def get_order_received_header(self):
-        return self.sl.wait_and_get_text(self.ORDER_RECEIVED_HEADER)
+        return self.sl.wait_and_get_text(self.PAGE_MAIN_HEADER)
+
+    def get_order_number(self):
+        return self.sl.wait_and_get_text(self.ORDER_NUMBER)
