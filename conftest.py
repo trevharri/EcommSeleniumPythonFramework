@@ -4,7 +4,6 @@ import allure
 
 import pytest_html
 from selenium.webdriver.chrome.options import Options as ChOptions
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.firefox.options import Options as FFOptions
 from selenium import webdriver
 
@@ -44,31 +43,12 @@ def init_driver(request):
     driver.quit()
 
 
-## for pytest-html report generation
-# @pytest.hookimpl(hookwrapper=True)
-# def pytest_runtest_makereport(item, call):
-#     outcome = yield
-#     report = outcome.get_result()
-#     extra = getattr(report, "extra", [])
-#     if report.when == "call":
-#         xfail = hasattr(report, "wasxfail")
-#         if (report.skipped and xfail) or (report.failed and not xfail):
-#             is_frontend_test = True if 'init_driver' in item.fixturenames else False
-#             if is_frontend_test:
-#                 results_dir = os.environ.get("RESULTS_DIR")
-#                 if not results_dir:
-#                     raise Exception("Environment variable 'RESULTS_DIR' must be set.")
-#                 screen_shot_path = os.path.join(results_dir, item.name + '.png')
-#                 driver_fixture = item.funcargs['request']
-#                 driver_fixture.cls.driver.save_screenshot(screen_shot_path)
-#                 extra.append(pytest_html.extras.image(screen_shot_path))
-#         report.extra = extra
-
-# for allure report generation
+# for pytest-html report generation
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
     outcome = yield
     report = outcome.get_result()
+    extra = getattr(report, "extra", [])
     if report.when == "call":
         xfail = hasattr(report, "wasxfail")
         if (report.skipped and xfail) or (report.failed and not xfail):
@@ -80,6 +60,25 @@ def pytest_runtest_makereport(item, call):
                 screen_shot_path = os.path.join(results_dir, item.name + '.png')
                 driver_fixture = item.funcargs['request']
                 driver_fixture.cls.driver.save_screenshot(screen_shot_path)
-                allure.attach(driver_fixture.cls.driver.get_screenshot_as_png(),
-                              name='screenshot',
-                              attachment_type=allure.attachment_type.PNG)
+                extra.append(pytest_html.extras.image(screen_shot_path))
+        report.extra = extra
+
+# # for allure report generation
+# @pytest.hookimpl(hookwrapper=True)
+# def pytest_runtest_makereport(item, call):
+#     outcome = yield
+#     report = outcome.get_result()
+#     if report.when == "call":
+#         xfail = hasattr(report, "wasxfail")
+#         if (report.skipped and xfail) or (report.failed and not xfail):
+#             is_frontend_test = True if 'init_driver' in item.fixturenames else False
+#             if is_frontend_test:
+#                 results_dir = os.environ.get("RESULTS_DIR")
+#                 if not results_dir:
+#                     raise Exception("Environment variable 'RESULTS_DIR' must be set.")
+#                 screen_shot_path = os.path.join(results_dir, item.name + '.png')
+#                 driver_fixture = item.funcargs['request']
+#                 driver_fixture.cls.driver.save_screenshot(screen_shot_path)
+#                 allure.attach(driver_fixture.cls.driver.get_screenshot_as_png(),
+#                               name='screenshot',
+#                               attachment_type=allure.attachment_type.PNG)

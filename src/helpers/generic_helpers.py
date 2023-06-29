@@ -15,4 +15,4 @@ def generate_random_email_and_password(domain=None, email_prefix=None):
 
     logger.info(f"Generated random email: {email}")
 
-    return {"email":email, "password":password}
+    return {"email": email, "password": password}

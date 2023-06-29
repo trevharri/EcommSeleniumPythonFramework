@@ -1,0 +1,38 @@
+2023-06-29 11:19:44,085 :INFO : test_end_to_end_checkout_guest_user :Going to homepage
+2023-06-29 11:19:45,582 :INFO : test_end_to_end_checkout_guest_user :Adding random product to cart
+2023-06-29 11:19:45,852 :INFO : test_end_to_end_checkout_guest_user :Waiting for item count in header to update
+2023-06-29 11:19:46,406 :INFO : test_end_to_end_checkout_guest_user :Clicking on left cart button in navigation bar
+2023-06-29 11:19:46,983 :INFO : test_end_to_end_checkout_guest_user :Getting list all product names in cart
+2023-06-29 11:19:47,081 :INFO : test_end_to_end_checkout_guest_user :Asserting length of product name list equals 1
+2023-06-29 11:19:47,081 :INFO : test_end_to_end_checkout_guest_user :Applying coupon code
+2023-06-29 11:19:48,030 :INFO : test_end_to_end_checkout_guest_user :Asserting coupon success message displays
+2023-06-29 11:19:48,031 :INFO : test_end_to_end_checkout_guest_user :Going to checkout page
+2023-06-29 11:19:52,372 :INFO : test_end_to_end_checkout_guest_user :Filling in billing info
+2023-06-29 11:19:54,664 :INFO : test_end_to_end_checkout_guest_user :Placing order
+2023-06-29 11:19:55,237 :INFO : test_end_to_end_checkout_guest_user :Waiting for confirmation page to load
+2023-06-29 11:19:57,393 :INFO : test_end_to_end_checkout_guest_user :Confirming order received header is present
+2023-06-29 11:19:57,424 :INFO : test_end_to_end_checkout_guest_user :Confirming order in database
+2023-06-29 11:19:57,453 :INFO : test_end_to_end_checkout_guest_user :Confirming correct product name associated with order in DB
+2023-06-29 11:32:55,453 :INFO : test_end_to_end_checkout_guest_user :Going to homepage
+2023-06-29 11:32:57,078 :INFO : test_end_to_end_checkout_guest_user :Adding random product to cart
+2023-06-29 11:32:57,526 :INFO : test_end_to_end_checkout_guest_user :Waiting for item count in header to update
+2023-06-29 11:32:58,092 :INFO : test_end_to_end_checkout_guest_user :Clicking on left cart button in navigation bar
+2023-06-29 11:32:58,688 :INFO : test_end_to_end_checkout_guest_user :Getting list all product names in cart
+2023-06-29 11:32:58,785 :INFO : test_end_to_end_checkout_guest_user :Asserting length of product name list equals 1
+2023-06-29 11:32:58,785 :INFO : test_end_to_end_checkout_guest_user :Applying coupon code
+2023-06-29 11:32:59,673 :INFO : test_end_to_end_checkout_guest_user :Asserting coupon success message displays
+2023-06-29 11:32:59,673 :INFO : test_end_to_end_checkout_guest_user :Going to checkout page
+2023-06-29 11:33:02,643 :INFO : test_end_to_end_checkout_guest_user :Filling in billing info
+2023-06-29 11:33:03,945 :INFO : test_end_to_end_checkout_guest_user :Placing order
+2023-06-29 11:33:04,536 :INFO : test_end_to_end_checkout_guest_user :Waiting for confirmation page to load
+2023-06-29 11:33:08,506 :INFO : test_end_to_end_checkout_guest_user :Confirming order received header is present
+2023-06-29 11:33:08,549 :INFO : test_end_to_end_checkout_guest_user :Confirming order in database
+2023-06-29 11:33:08,579 :INFO : test_end_to_end_checkout_guest_user :Confirming correct product name associated with order in DB
+2023-06-29 11:33:11,750 :INFO : test_login_non_existing_user :Going to my account page.
+2023-06-29 11:33:12,712 :INFO : test_login_non_existing_user :Entering username/password that aren't registered
+2023-06-29 11:33:13,061 :INFO : test_login_non_existing_user :Click login button
+2023-06-29 11:33:13,544 :INFO : test_login_non_existing_user :Asserting error message appears.
+2023-06-29 11:33:16,426 :INFO : test_register_valid_new_user :Going to my account page
+2023-06-29 11:33:17,567 :INFO : test_register_valid_new_user :Generating/inputting random email and password
+2023-06-29 11:33:18,066 :INFO : test_register_valid_new_user :Clicking register button
+2023-06-29 11:33:19,005 :INFO : test_register_valid_new_user :Asserting Log out button present on new page

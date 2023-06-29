@@ -83,3 +83,4 @@ class SeleniumExtended:
         WebDriverWait(self.driver, timeout).until(
             EC.url_contains(value)
         )
+
