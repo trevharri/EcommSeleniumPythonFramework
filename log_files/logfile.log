@@ -36,3 +36,27 @@
 2023-06-29 11:33:17,567 :INFO : test_register_valid_new_user :Generating/inputting random email and password
 2023-06-29 11:33:18,066 :INFO : test_register_valid_new_user :Clicking register button
 2023-06-29 11:33:19,005 :INFO : test_register_valid_new_user :Asserting Log out button present on new page
+2023-06-29 11:43:02,355 :INFO : test_end_to_end_checkout_guest_user :Going to homepage
+2023-06-29 11:43:03,835 :INFO : test_end_to_end_checkout_guest_user :Adding random product to cart
+2023-06-29 11:43:04,177 :INFO : test_end_to_end_checkout_guest_user :Hoodie with Logo added to cart
+2023-06-29 11:43:04,177 :INFO : test_end_to_end_checkout_guest_user :Waiting for item count in header to update
+2023-06-29 11:43:04,725 :INFO : test_end_to_end_checkout_guest_user :Clicking on left cart button in navigation bar
+2023-06-29 11:43:05,314 :INFO : test_end_to_end_checkout_guest_user :Getting list all product names in cart
+2023-06-29 11:43:05,413 :INFO : test_end_to_end_checkout_guest_user :Asserting length of product name list equals 1
+2023-06-29 11:43:05,413 :INFO : test_end_to_end_checkout_guest_user :Applying coupon code
+2023-06-29 11:43:06,243 :INFO : test_end_to_end_checkout_guest_user :Asserting coupon success message displays
+2023-06-29 11:43:06,244 :INFO : test_end_to_end_checkout_guest_user :Going to checkout page
+2023-06-29 11:43:09,203 :INFO : test_end_to_end_checkout_guest_user :Filling in billing info
+2023-06-29 11:43:10,547 :INFO : test_end_to_end_checkout_guest_user :Placing order
+2023-06-29 11:43:11,214 :INFO : test_end_to_end_checkout_guest_user :Waiting for confirmation page to load
+2023-06-29 11:43:14,829 :INFO : test_end_to_end_checkout_guest_user :Confirming order received header is present
+2023-06-29 11:43:14,896 :INFO : test_end_to_end_checkout_guest_user :Confirming order number: f87 in database
+2023-06-29 11:43:14,899 :INFO : test_end_to_end_checkout_guest_user :Confirming fHoodie with Logo associated with order number f87 in DB
+2023-06-29 11:43:17,796 :INFO : test_login_non_existing_user :Going to my account page.
+2023-06-29 11:43:18,960 :INFO : test_login_non_existing_user :Entering username/password that aren't registered
+2023-06-29 11:43:19,334 :INFO : test_login_non_existing_user :Click login button
+2023-06-29 11:43:19,793 :INFO : test_login_non_existing_user :Asserting error message appears.
+2023-06-29 11:43:22,580 :INFO : test_register_valid_new_user :Going to my account page
+2023-06-29 11:43:23,519 :INFO : test_register_valid_new_user :Generating/inputting email: ftestuser_WnmLLqUmbI@test.com and password: QwertyQwerty1234!@#$ 
+2023-06-29 11:43:24,004 :INFO : test_register_valid_new_user :Clicking register button
+2023-06-29 11:43:24,785 :INFO : test_register_valid_new_user :Asserting Log out button present on new page

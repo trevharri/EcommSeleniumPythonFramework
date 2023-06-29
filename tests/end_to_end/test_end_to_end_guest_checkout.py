@@ -30,6 +30,7 @@ class TestEndToEndCheckoutGuestUser:
         home_page.go_to_home_page()
         log.info("Adding random product to cart")
         chosen_product = home_page.add_random_product_to_cart()
+        log.info(f"{chosen_product} added to cart")
         log.info("Waiting for item count in header to update")
         header.wait_until_cart_item_count(1)
         log.info("Clicking on left cart button in navigation bar")
@@ -58,12 +59,12 @@ class TestEndToEndCheckoutGuestUser:
         log.info("Confirming order received header is present")
         order_received_message = order_received_page.get_order_received_header()
         assert order_received_message == 'Order received'
-        log.info("Confirming order in database")
         order_number = order_received_page.get_order_number()
+        log.info(f"Confirming order number: {order_number} in database")
         db_order = get_order_from_db_by_order_no(order_number)
         assert db_order, f"After creating order with FE, not found in DB"\
                          f"Order no: {order_number}"
-        log.info("Confirming correct product name associated with order in DB")
+        log.info(f"Confirming {chosen_product} associated with order number {order_number} in DB")
         db_product = get_item_from_db_by_order_no(order_number)
         assert db_product == chosen_product, f"Product name ordered on FE doesn't match product name in DB"\
                                              f"Product name FE:{chosen_product}"

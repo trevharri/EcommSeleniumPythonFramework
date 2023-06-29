@@ -439,9 +439,9 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 29-Jun-2023 at 11:33:19 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 29-Jun-2023 at 11:43:25 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>3 tests ran in 27.65 seconds. </p>
+    <p>3 tests ran in 26.28 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -457,30 +457,31 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/end_to_end/test_end_to_end_guest_checkout.py::TestEndToEndCheckoutGuestUser::test_end_to_end_checkout_guest_user</td>
-          <td class="col-duration">17.06</td>
+          <td class="col-duration">16.28</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:29 Going to homepage
 INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:31 Adding random product to cart
-INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:33 Waiting for item count in header to update
-INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:35 Clicking on left cart button in navigation bar
-INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:38 Getting list all product names in cart
-INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:40 Asserting length of product name list equals 1
-INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:42 Applying coupon code
-INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:46 Asserting coupon success message displays
-INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:48 Going to checkout page
-INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:51 Filling in billing info
-INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:53 Placing order
-INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:56 Waiting for confirmation page to load
-INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:58 Confirming order received header is present
-INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:61 Confirming order in database
-INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:66 Confirming correct product name associated with order in DB<br/></div></td></tr></tbody>
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:33 Hoodie with Logo added to cart
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:34 Waiting for item count in header to update
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:36 Clicking on left cart button in navigation bar
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:39 Getting list all product names in cart
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:41 Asserting length of product name list equals 1
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:43 Applying coupon code
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:47 Asserting coupon success message displays
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:49 Going to checkout page
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:52 Filling in billing info
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:54 Placing order
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:57 Waiting for confirmation page to load
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:59 Confirming order received header is present
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:63 Confirming order number: f87 in database
+INFO     test_end_to_end_checkout_guest_user:test_end_to_end_guest_checkout.py:67 Confirming fHoodie with Logo associated with order number f87 in DB<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/my_account/test_login_negative.py::TestLoginNegative::test_login_non_existing_user</td>
-          <td class="col-duration">4.98</td>
+          <td class="col-duration">4.86</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -492,11 +493,11 @@ INFO     test_login_non_existing_user:test_login_negative.py:21 Asserting error 
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/my_account/test_register_new_user.py::TestRegisterNewUser::test_register_valid_new_user</td>
-          <td class="col-duration">5.45</td>
+          <td class="col-duration">5.01</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_register_valid_new_user:test_register_new_user.py:18 Going to my account page
-INFO     test_register_valid_new_user:test_register_new_user.py:20 Generating/inputting random email and password
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_register_valid_new_user:test_register_new_user.py:19 Going to my account page
+INFO     test_register_valid_new_user:test_register_new_user.py:21 Generating/inputting email: ftestuser_WnmLLqUmbI@test.com and password: QwertyQwerty1234!@#$ 
 INFO     test_register_valid_new_user:test_register_new_user.py:24 Clicking register button
 INFO     test_register_valid_new_user:test_register_new_user.py:26 Asserting Log out button present on new page<br/></div></td></tr></tbody></table></body></html>

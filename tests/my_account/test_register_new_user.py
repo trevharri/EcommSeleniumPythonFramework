@@ -14,11 +14,11 @@ class TestRegisterNewUser:
         log = get_logger()
         my_account_signed_out = MyAccountSignedOut(self.driver)
         my_account_signed_in = MyAccountSignedIn(self.driver)
+        random_credentials = generate_random_email_and_password()
 
         log.info("Going to my account page")
         my_account_signed_out.go_to_my_account()
-        log.info("Generating/inputting random email and password")
-        random_credentials = generate_random_email_and_password()
+        log.info(f'Generating/inputting email: {random_credentials["email"]} and password: QwertyQwerty1234!@#$ ')
         my_account_signed_out.input_reg_email(random_credentials["email"])
         my_account_signed_out.input_reg_password('QwertyQwerty1234!@#$')
         log.info("Clicking register button")
