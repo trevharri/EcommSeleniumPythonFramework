@@ -14,10 +14,9 @@ class TestLoginNegative:
         password = "TestPassword1234*"
         expected_err_text = 'Error: The username TestUser is not registered on this site. If you are unsure of your ' \
                             'username, try your email address instead.'
-
         log.debug("Going to my account page.")
         my_account.go_to_my_account()
-        log.info(f"Entering unregistered username/password ({user_name}/{password}) that aren't registered")
+        log.info(f"Entering unregistered username/password ({user_name}/{password})")
         my_account.input_login_username(user_name)
         my_account.input_login_password(password)
         log.debug("Click login button")

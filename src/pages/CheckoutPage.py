@@ -71,3 +71,9 @@ class CheckoutPage(CheckoutPageLocators):
         self.enter_post_code(post_code)
         self.enter_phone_number(phone_number)
         self.enter_email(email)
+
+    def check_create_account_box(self):
+        self.sl.wait_and_click(self.CREATE_ACC_CHECKBOX)
+
+    def enter_account_password(self, password):
+        self.sl.wait_and_input_text(self.ACC_PASSWORD_FIELD, password)

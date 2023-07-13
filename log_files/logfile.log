@@ -22,3 +22,126 @@
 2023-06-29 12:15:49,137 :INFO : test_register_valid_new_user :Generating/inputting email: testuser_vqENIPvDxe@test.com and password: QwertyQwerty1234!@#$ 
 2023-06-29 12:15:49,609 :DEBUG : test_register_valid_new_user :Clicking register button
 2023-06-29 12:15:50,352 :INFO : test_register_valid_new_user :Asserting Log out button present on new page
+2023-07-01 13:45:32,431 :DEBUG : test_login_non_existing_user :Going to my account page.
+2023-07-01 13:46:25,054 :DEBUG : test_login_non_existing_user :Going to my account page.
+2023-07-01 13:47:09,479 :DEBUG : test_login_non_existing_user :Going to my account page.
+2023-07-01 13:47:13,711 :INFO : test_login_non_existing_user :Entering unregistered username/password (TestUser/TestPassword1234*)
+2023-07-01 13:47:14,153 :DEBUG : test_login_non_existing_user :Click login button
+2023-07-01 13:47:14,645 :INFO : test_login_non_existing_user :Asserting error message appears: Errror: The username TestUser is not registered on this site. If you are unsure of your username, try your email address instead.
+2023-07-01 13:48:03,611 :DEBUG : test_login_non_existing_user :Going to my account page.
+2023-07-01 13:48:04,607 :INFO : test_login_non_existing_user :Entering unregistered username/password (TestUser/TestPassword1234*)
+2023-07-01 13:48:05,023 :DEBUG : test_login_non_existing_user :Click login button
+2023-07-01 13:48:05,488 :INFO : test_login_non_existing_user :Asserting error message appears: Error: The username TestUser is not registered on this site. If you are unsure of your username, try your email address instead.
+2023-07-01 13:55:07,643 :DEBUG : test_login_non_existing_user :Going to my account page.
+2023-07-01 13:55:08,722 :INFO : test_login_non_existing_user :Entering unregistered username/password (TestUser/TestPassword1234*)
+2023-07-01 13:55:09,099 :DEBUG : test_login_non_existing_user :Click login button
+2023-07-01 13:55:09,549 :INFO : test_login_non_existing_user :Asserting error message appears: Error: The username TestUser is not registered on this site. If you are unsure of your username, try your email address instead.
+2023-07-01 13:58:45,280 :DEBUG : test_login_non_existing_user :Going to my account page.
+2023-07-01 13:58:46,462 :INFO : test_login_non_existing_user :Entering unregistered username/password (TestUser/TestPassword1234*)
+2023-07-01 13:58:46,896 :DEBUG : test_login_non_existing_user :Click login button
+2023-07-01 13:58:47,409 :INFO : test_login_non_existing_user :Asserting error message appears: Error: The username TestUser is not registered on this site. If you are unsure of your username, try your email address instead.
+2023-07-01 13:59:14,434 :DEBUG : test_login_non_existing_user :Going to my account page.
+2023-07-01 13:59:15,257 :INFO : test_login_non_existing_user :Entering unregistered username/password (TestUser/TestPassword1234*)
+2023-07-01 13:59:15,733 :DEBUG : test_login_non_existing_user :Click login button
+2023-07-01 13:59:16,251 :INFO : test_login_non_existing_user :Asserting error message appears: Error: The username TestUser is not registered on this site. If you are unsure of your username, try your email address instead.
+2023-07-01 14:00:03,984 :DEBUG : test_login_non_existing_user :Going to my account page.
+2023-07-01 14:00:04,945 :INFO : test_login_non_existing_user :Entering unregistered username/password (TestUser/TestPassword1234*)
+2023-07-01 14:00:05,335 :DEBUG : test_login_non_existing_user :Click login button
+2023-07-01 14:00:05,810 :INFO : test_login_non_existing_user :Asserting error message appears: Error: The username TestUser is not registered on this site. If you are unsure of your username, try your email address instead.
+2023-07-02 15:32:15,916 :INFO : test_end_to_end_checkout_guest_user :Going to homepage
+2023-07-02 15:32:17,097 :INFO : test_end_to_end_checkout_guest_user :Adding random product to cart
+2023-07-02 15:32:17,531 :INFO : test_end_to_end_checkout_guest_user :Long Sleeve Tee added to cart
+2023-07-02 15:32:17,531 :DEBUG : test_end_to_end_checkout_guest_user :Waiting for item count in header to update
+2023-07-02 15:32:18,075 :DEBUG : test_end_to_end_checkout_guest_user :Clicking on left cart button in navigation bar
+2023-07-02 15:32:18,683 :DEBUG : test_end_to_end_checkout_guest_user :Getting list all product names in cart
+2023-07-02 15:32:18,774 :INFO : test_end_to_end_checkout_guest_user :Asserting length of product name list equals 1
+2023-07-02 15:32:18,774 :INFO : test_end_to_end_checkout_guest_user :Applying coupon code: ssqa100
+2023-07-02 15:32:19,647 :INFO : test_end_to_end_checkout_guest_user :Asserting coupon success message displays
+2023-07-02 15:32:19,648 :DEBUG : test_end_to_end_checkout_guest_user :Going to checkout page
+2023-07-02 15:32:22,751 :DEBUG : test_end_to_end_checkout_guest_user :Filling in billing info
+2023-07-02 15:32:24,099 :DEBUG : test_end_to_end_checkout_guest_user :Placing order
+2023-07-02 15:32:24,733 :DEBUG : test_end_to_end_checkout_guest_user :Waiting for confirmation page to load
+2023-07-02 15:32:29,593 :INFO : test_end_to_end_checkout_guest_user :Confirming order received header is present
+2023-07-02 15:32:29,663 :INFO : test_end_to_end_checkout_guest_user :Confirming order number: 90 in database
+2023-07-02 15:33:54,518 :INFO : test_end_to_end_checkout_guest_user :Going to homepage
+2023-07-02 15:33:55,681 :INFO : test_end_to_end_checkout_guest_user :Adding random product to cart
+2023-07-02 15:33:56,105 :INFO : test_end_to_end_checkout_guest_user :Beanie with Logo added to cart
+2023-07-02 15:33:56,106 :DEBUG : test_end_to_end_checkout_guest_user :Waiting for item count in header to update
+2023-07-02 15:33:56,668 :DEBUG : test_end_to_end_checkout_guest_user :Clicking on left cart button in navigation bar
+2023-07-02 15:33:57,340 :DEBUG : test_end_to_end_checkout_guest_user :Getting list all product names in cart
+2023-07-02 15:33:57,442 :INFO : test_end_to_end_checkout_guest_user :Asserting length of product name list equals 1
+2023-07-02 15:33:57,443 :INFO : test_end_to_end_checkout_guest_user :Applying coupon code: ssqa100
+2023-07-02 15:33:58,369 :INFO : test_end_to_end_checkout_guest_user :Asserting coupon success message displays
+2023-07-02 15:33:58,370 :DEBUG : test_end_to_end_checkout_guest_user :Going to checkout page
+2023-07-02 15:34:01,526 :DEBUG : test_end_to_end_checkout_guest_user :Filling in billing info
+2023-07-02 15:34:03,019 :DEBUG : test_end_to_end_checkout_guest_user :Placing order
+2023-07-02 15:34:03,653 :DEBUG : test_end_to_end_checkout_guest_user :Waiting for confirmation page to load
+2023-07-02 15:34:08,801 :INFO : test_end_to_end_checkout_guest_user :Confirming order received header is present
+2023-07-02 15:34:08,869 :INFO : test_end_to_end_checkout_guest_user :Confirming order number: 91 in database
+2023-07-02 15:34:12,287 :DEBUG : test_login_non_existing_user :Going to my account page.
+2023-07-02 15:34:13,260 :INFO : test_login_non_existing_user :Entering unregistered username/password (TestUser/TestPassword1234*)
+2023-07-02 15:34:13,637 :DEBUG : test_login_non_existing_user :Click login button
+2023-07-02 15:34:14,184 :INFO : test_login_non_existing_user :Asserting error message appears: Error: The username TestUser is not registered on this site. If you are unsure of your username, try your email address instead.
+2023-07-02 15:34:17,106 :DEBUG : test_register_valid_new_user :Going to my account page
+2023-07-02 15:34:18,195 :INFO : test_register_valid_new_user :Generating/inputting email: testuser_fkxQDneKqZ@test.com and password: QwertyQwerty1234!@#$ 
+2023-07-02 15:34:18,758 :DEBUG : test_register_valid_new_user :Clicking register button
+2023-07-02 15:34:19,593 :INFO : test_register_valid_new_user :Asserting Log out button present on new page
+2023-07-02 15:35:22,335 :INFO : test_end_to_end_checkout_guest_user :Going to homepage
+2023-07-02 15:35:23,409 :INFO : test_end_to_end_checkout_guest_user :Adding random product to cart
+2023-07-02 15:35:23,734 :INFO : test_end_to_end_checkout_guest_user :Hoodie with Zipper added to cart
+2023-07-02 15:35:23,734 :DEBUG : test_end_to_end_checkout_guest_user :Waiting for item count in header to update
+2023-07-02 15:35:24,289 :DEBUG : test_end_to_end_checkout_guest_user :Clicking on left cart button in navigation bar
+2023-07-02 15:35:24,958 :DEBUG : test_end_to_end_checkout_guest_user :Getting list all product names in cart
+2023-07-02 15:35:24,988 :INFO : test_end_to_end_checkout_guest_user :Asserting length of product name list equals 1
+2023-07-02 15:35:24,988 :INFO : test_end_to_end_checkout_guest_user :Applying coupon code: ssqa100
+2023-07-02 15:35:25,851 :INFO : test_end_to_end_checkout_guest_user :Asserting coupon success message displays
+2023-07-02 15:35:25,851 :DEBUG : test_end_to_end_checkout_guest_user :Going to checkout page
+2023-07-02 15:35:28,886 :DEBUG : test_end_to_end_checkout_guest_user :Filling in billing info
+2023-07-02 15:35:30,206 :DEBUG : test_end_to_end_checkout_guest_user :Placing order
+2023-07-02 15:35:30,824 :DEBUG : test_end_to_end_checkout_guest_user :Waiting for confirmation page to load
+2023-07-02 15:35:35,395 :INFO : test_end_to_end_checkout_guest_user :Confirming order received header is present
+2023-07-02 15:35:35,477 :INFO : test_end_to_end_checkout_guest_user :Confirming order number: 92 in database
+2023-07-02 15:35:35,479 :INFO : test_end_to_end_checkout_guest_user :Confirming Hoodie with Zipper associated with order number 92 in DB
+2023-07-02 15:35:38,321 :DEBUG : test_login_non_existing_user :Going to my account page.
+2023-07-02 15:35:39,081 :INFO : test_login_non_existing_user :Entering unregistered username/password (TestUser/TestPassword1234*)
+2023-07-02 15:35:39,538 :DEBUG : test_login_non_existing_user :Click login button
+2023-07-02 15:35:40,028 :INFO : test_login_non_existing_user :Asserting error message appears: Error: The username TestUser is not registered on this site. If you are unsure of your username, try your email address instead.
+2023-07-02 15:35:42,875 :DEBUG : test_register_valid_new_user :Going to my account page
+2023-07-02 15:35:43,662 :INFO : test_register_valid_new_user :Generating/inputting email: testuser_MOHyQgFLrf@test.com and password: QwertyQwerty1234!@#$ 
+2023-07-02 15:35:44,236 :DEBUG : test_register_valid_new_user :Clicking register button
+2023-07-02 15:35:45,010 :INFO : test_register_valid_new_user :Asserting Log out button present on new page
+2023-07-13 18:23:34,247 :DEBUG : test_e2e_register_at_checkout :Waiting for confirmation page to load
+2023-07-13 18:23:40,177 :INFO : test_e2e_register_at_checkout :Confirming order received header is present
+2023-07-13 18:28:29,089 :DEBUG : test_e2e_register_at_checkout :Waiting for confirmation page to load
+2023-07-13 18:28:33,649 :INFO : test_e2e_register_at_checkout :Confirming order received header is present
+2023-07-13 18:28:33,743 :INFO : test_e2e_register_at_checkout :Confirming Premium Quality associated with order number 104 in DB
+2023-07-13 18:30:01,417 :DEBUG : test_e2e_register_at_checkout :Waiting for confirmation page to load
+2023-07-13 18:30:05,802 :INFO : test_e2e_register_at_checkout :Confirming order received header is present
+2023-07-13 18:30:05,876 :INFO : test_e2e_register_at_checkout :Confirming Sunglasses associated with order number 105 in DB
+2023-07-13 18:30:42,987 :DEBUG : test_end_to_end_checkout_guest_user :Going to homepage
+2023-07-13 18:30:44,305 :DEBUG : test_end_to_end_checkout_guest_user :Adding random product to cart
+2023-07-13 18:30:44,724 :INFO : test_end_to_end_checkout_guest_user :T-Shirt added to cart
+2023-07-13 18:30:44,724 :DEBUG : test_end_to_end_checkout_guest_user :Waiting for item count in header to update
+2023-07-13 18:30:45,278 :DEBUG : test_end_to_end_checkout_guest_user :Clicking on left cart button in navigation bar
+2023-07-13 18:30:45,888 :DEBUG : test_end_to_end_checkout_guest_user :Getting list all product names in cart
+2023-07-13 18:30:45,978 :INFO : test_end_to_end_checkout_guest_user :Asserting length of product name list equals 1
+2023-07-13 18:30:45,978 :INFO : test_end_to_end_checkout_guest_user :Applying coupon code: ssqa100
+2023-07-13 18:30:46,856 :INFO : test_end_to_end_checkout_guest_user :Asserting coupon success message displays
+2023-07-13 18:30:46,857 :DEBUG : test_end_to_end_checkout_guest_user :Going to checkout page
+2023-07-13 18:30:49,911 :DEBUG : test_end_to_end_checkout_guest_user :Filling in billing info
+2023-07-13 18:30:51,275 :DEBUG : test_end_to_end_checkout_guest_user :Placing order
+2023-07-13 18:30:51,911 :DEBUG : test_end_to_end_checkout_guest_user :Waiting for confirmation page to load
+2023-07-13 18:30:56,143 :INFO : test_end_to_end_checkout_guest_user :Confirming order received header is present
+2023-07-13 18:30:56,218 :INFO : test_end_to_end_checkout_guest_user :Confirming order number: 106 in database
+2023-07-13 18:30:56,221 :INFO : test_end_to_end_checkout_guest_user :Confirming T-Shirt associated with order number 106 in DB
+2023-07-13 18:31:08,300 :DEBUG : test_e2e_register_at_checkout :Waiting for confirmation page to load
+2023-07-13 18:31:13,398 :INFO : test_e2e_register_at_checkout :Confirming order received header is present
+2023-07-13 18:31:13,490 :INFO : test_e2e_register_at_checkout :Confirming Hoodie with Logo associated with order number 107 in DB
+2023-07-13 18:31:19,929 :DEBUG : test_login_non_existing_user :Going to my account page.
+2023-07-13 18:31:21,314 :INFO : test_login_non_existing_user :Entering unregistered username/password (TestUser/TestPassword1234*)
+2023-07-13 18:31:21,819 :DEBUG : test_login_non_existing_user :Click login button
+2023-07-13 18:31:22,271 :INFO : test_login_non_existing_user :Asserting error message appears: Error: The username TestUser is not registered on this site. If you are unsure of your username, try your email address instead.
+2023-07-13 18:31:25,250 :DEBUG : test_register_valid_new_user :Going to my account page
+2023-07-13 18:31:26,075 :INFO : test_register_valid_new_user :Generating/inputting email: testuser_oXavRvvZOj@test.com and password: QwertyQwerty1234!@#$ 
+2023-07-13 18:31:26,590 :DEBUG : test_register_valid_new_user :Clicking register button
+2023-07-13 18:31:27,337 :INFO : test_register_valid_new_user :Asserting Log out button present on new page

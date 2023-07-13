@@ -20,3 +20,7 @@ class Header(HeaderLocators):
             expected_text = str(count) + ' items'
         self.sl.wait_until_element_contains_text(self.CART_ITEMS, expected_text)
 
+    def go_to_my_account(self):
+        self.sl.wait_and_click(self.MY_ACCOUNT)
+
+

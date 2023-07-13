@@ -12,3 +12,5 @@ class CheckoutPageLocators:
     PHONE_NUMBER_FIELD = (By.ID, 'billing_phone')
     EMAIL_FIELD = (By.ID, 'billing_email')
     PLACE_ORDER_BTN = (By.ID, 'place_order')
+    CREATE_ACC_CHECKBOX = (By.ID, 'createaccount')
+    ACC_PASSWORD_FIELD = (By.ID, 'account_password')
